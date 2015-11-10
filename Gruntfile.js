@@ -4,7 +4,7 @@ module.exports = function(grunt)
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       sass: {
-        files: 'sass/custom.scss',
+        files: 'sass/*.scss',
         tasks: ['sass', 'concat:styles']
       }
     },
@@ -35,7 +35,7 @@ module.exports = function(grunt)
     sass:{
       dist: {
         files: {
-          'css/custom.css' : 'sass/custom.scss'
+          'css/custom.css' : 'sass/*.scss'
         }
       }
     }
